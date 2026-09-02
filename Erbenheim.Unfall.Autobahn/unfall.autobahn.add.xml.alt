@@ -1,0 +1,17 @@
+<!-- Unfall auf der Autobahn,
+     zwischen Erbenheim und Nordenstadt, Richtung Nordenstadt
+     rechte und mittlere Spur gesperrt
+-->
+     
+<additional>
+    <!-- Rerouter wird am Anfang der Autobahn-Edge platziert -->
+    <rerouter id="unfall_sperrung" edges="332072295" pos="0">
+        <!-- Zeitraum des Unfalls (z.B. von Sekunde 100 bis 1800) -->
+        <interval begin="100" end="5400">
+            <!-- Sperrung von Spur 0 (rechts) und Spur 1 (mitte). Nur Spur 2 bleibt frei -->
+            <closingLane id="332072295_0"/>
+            <closingLane id="332072295_1"/>
+        </interval>
+    </rerouter>
+</additional>
+

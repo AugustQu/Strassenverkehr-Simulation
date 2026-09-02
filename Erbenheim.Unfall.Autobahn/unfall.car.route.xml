@@ -1,0 +1,26 @@
+<!-- Unfall auf der Autobahn,
+     zwischen Erbenheim und Nordenstadt, Richtung Nordenstadt
+     rechte und mittlere Spur gesperrt
+-->
+
+<routes>
+    <!-- Unfallfahrzeug 1 stoppt auf Spur 0 (rechte Spur) -->
+    <vehicle id="unfall_pkw1" type="car" depart="50" departLane="0">
+        <route edges="332072295"/>
+        <stop lane="332072295_0" endPos="500" duration="5000"/>
+    </vehicle>
+
+    <!-- Unfallfahrzeug 2 stoppt auf Spur 1 (mittlere Spur) auf gleicher Höhe -->
+    <vehicle id="unfall_pkw2" type="car" depart="52" departLane="1">
+        <route edges="332072295"/>
+        <stop lane="332072295_1" endPos="500" duration="5000"/>
+    </vehicle>
+
+    <!-- Unfallfahrzeug 3 stoppt auf Spur 2 (linke Spur) auf gleicher Höhe
+         Unfallstelle wird nach gewisser Zeit geräumt  -->
+    <vehicle id="unfall_pkw3" type="car" depart="52" departLane="2">
+        <route edges="332072295"/>
+        <stop lane="332072295_2" endPos="500" duration="3000"/>
+    </vehicle>
+</routes>
+

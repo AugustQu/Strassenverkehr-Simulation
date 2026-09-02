@@ -1,0 +1,7 @@
+
+<viewsettings>
+    <scheme name="real world"/>
+<!--   modifed by AQ
+    <delay value="20"/>  -->
+    <delay value="300"/> 
+</viewsettings>
